@@ -2,7 +2,15 @@ def calculatePay():
     # Implement your solution in between the two comment blocks
     print("calculating pay")
     # This first line is provided for you
-    hrs = input("Enter Hours:")
+    hours = input("Enter Hours: ")
+    rate = input("Enter rate of pay in US dollars per hour: ")
+
+    # pay calculation
+    # casting both hours and rate to floats in case user inputs decimals for either
+    pay = float(hours) * float(rate) 
+
+    # print results of inputs
+    print(pay)
 
     # end assignment
 
